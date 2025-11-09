@@ -21,10 +21,10 @@ Upload a drawing (preferably a cartoon), describe the scene in a prompt if you l
 ## 📸 Example
 
 ### Input Image
-![Example Cartoon Input](input\cartoon_dog.jpeg)
+![Example Cartoon Input](input/cartoon_dog.jpeg)
 
 ### Output Video
-🎥 [Example Output Video](output\videos\job_20251109_163505_b0dbee22_runware.mp4)
+🎥 [Example Output Video](output/videos/cartoon_dog.gif)
 
 
 

@@ -10,7 +10,6 @@ ENV/
 .env
 
 
-output/
 static/uploads/
 
 .vscode/
