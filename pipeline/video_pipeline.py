@@ -47,14 +47,13 @@ class VideoPipeline:
         job_id: Optional[str] = None
     ) -> Dict:
         """
-        Complete pipeline: Image -> Video -> Video with Audio
+        Complete pipeline: Upload Image -> ImageToVideo 
         
         Args:
             image_path: Path to input image
             prompt: Video generation prompt
             duration: Video duration in seconds
             ratio: Aspect ratio
-            voice_config: Configuration for voice generation (for Mirelo)
             job_id: Optional job ID (will be generated if not provided)
         
         Returns:

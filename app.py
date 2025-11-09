@@ -19,7 +19,7 @@ from utils.logger import PipelineLogger
 # Initialize FastAPI app
 app = FastAPI(
     title="Video Generation Pipeline",
-    description="Generate videos from images using Runware and add voice with Mirelo AI",
+    description="Generate videos from images using Runware",
     version="1.0.0"
 )
 
@@ -99,9 +99,7 @@ async def generate_video(
     filename: str = Form(...),
     prompt: Optional[str] = Form(None),
     duration: int = Form(5),
-    ratio: str = Form("16:9"),
-    voice_text: Optional[str] = Form(None),
-    voice_type: Optional[str] = Form("female")
+    ratio: str = Form("16:9")
 ):
     """
     Start video generation pipeline

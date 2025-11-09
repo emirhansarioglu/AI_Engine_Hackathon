@@ -192,8 +192,6 @@ async function handleGenerate(e) {
     formData.append('prompt', document.getElementById('prompt').value);
     formData.append('duration', document.getElementById('duration').value);
     formData.append('ratio', document.getElementById('ratio').value);
-    formData.append('voice_text', document.getElementById('voiceText').value);
-    formData.append('voice_type', document.getElementById('voiceType').value);
     
     try {
         generateBtn.disabled = true;
@@ -253,8 +251,6 @@ function updateProgress(data) {
         'initialized': 'Initializing...',
         'image_uploaded': 'Image uploaded, starting generation...',
         'video_generated': 'Video generated, downloading...',
-        'video_downloaded': 'Adding audio...',
-        'audio_added': 'Finalizing...',
         'completed': 'Complete!'
     };
     
