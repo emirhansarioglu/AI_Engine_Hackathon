@@ -29,7 +29,6 @@ class VideoPipeline:
         
         # Services will be initialized when needed
         self.runware_service = None
-        self.mirelo_service = None
     
     async def _init_runware_service(self):
         """Initialize Runware service"""
@@ -91,7 +90,7 @@ class VideoPipeline:
                 raise Exception(f"Runware video generation failed: {video_result.get('error')}")
             
             # ========================================
-            # STEP 2: Download Video (optional but recommended)
+            # STEP 2: Download Video 
             # ========================================
             if Config.AUTO_DOWNLOAD_VIDEOS:
                 self.logger.info(f"[{job_id}] Step 2: Downloading video")
